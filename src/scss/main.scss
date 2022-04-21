@@ -1,1 +1,30 @@
 @import "reset";
+
+:root{
+  --lightGray: rgba(128,128,128,0.5);
+  --black: #000;
+  --darkerGray: #666666;
+  --lightBlue: #00C0EE;
+}
+
+.cart img{
+  width: 25px;
+  height: 25px;
+  }
+  .nav-bar{ 
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border-bottom:solid 2px var(--lightGray);
+  }
+ .colors{
+   display: flex;
+   flex-direction: column;
+ }
+ .color{
+   margin: 5px 0;
+ }
+ .color p{
+  margin-top: 5px;
+}
+
