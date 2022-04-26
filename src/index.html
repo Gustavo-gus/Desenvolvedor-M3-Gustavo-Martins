@@ -5,68 +5,96 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>Desenvolvedor M3</title>
   <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
   <header>
-    <nav>
-      <div class="nav-bar">
-        <div class="logo">
-          <img src="./img/logo-m3.png" alt="">
-        </div>
-        <div class="cart">
-          <img src="./img/bag.png" alt="">
-        </div>
-  
-      </div>
-    </nav>
+    <div class="logo">
+      <img src="./img/logo-m3.png" alt="">
+      <button id="shop-bag">
+        <img src="./img/bag.png" alt="">
+        <span class="counter">0</span>
+      </button>
+    </div>
   </header>
-  <div class="container">
-    <div class="blusas">
-      <h2>Blusas</h2>
-      <div class="filters">
-        <div class="colors">
-          <h3>Cores</h3>
-          <div>
-            <input class="color" type="checkbox"> Amarelo
+
+  <main>
+    <div id="sort-dropdown" class="content">
+      <div class="area-content">
+        <h1 class="section-title">Blusas</h1>
+        <ul class="dropdown">
+          <li id="desktop-sort">
+            <a id="active-item-sort" class="dropdown-item">
+              Ordenar por:
+              <span>
+                <img src="./img/down-arrow.png" />
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="mobile-filters" class="content">
+      <div class="area-content">
+        <div class="filters-mob">
+          <h1 id="mb-toggle" class="item-filter">Filtrar</h1>
+          <div class="filters-mob" class="modal">
+            <div class="mod-title">Filtrar
+              <span id="modal-close"><img src="./img/cancel.svg" alt=""></span>
+            </div>
+            <div id="filters-mobile" class="filters">
+
+            </div>
+            <div class="filter-actions">
+              <button id="apply-filter" class="btn-primary">Aplicar</button>
+              <button id="clean-filter" class="btn-white">Limpar</button>
+            </div>
           </div>
-          <div>
-            <input class="color" type="checkbox"> Azul
+          <h1 id="mobile-sort-toggle" class="item-filter">Ordenar</h1>
+          <div id="mobile-sort" class="modal">
+            <div class="modal-title">Ordenar
+              <span id="close-modal-mobile-sort"><img src="./img/close.svg"></span>
+            </div>
+            <div id="sort-by-mobile">
+
+            </div>
           </div>
-          <div>
-            <input class="color" type="checkbox"> Branco
-          </div>
-          <div>
-            <input class="color" type="checkbox"> Cinza
-          </div>
-          <div>
-            <input class="color" type="checkbox"> Laranja
-          </div>
-          <p><a href="#">Ver todas as cores</a></p>
-        </div>
-        <div class="sizes">
-          <h3>Tamanhos</h3>
-          
-          <div class="mesure">P</div>
-          <div class="mesure">M</div>
-          <div class="mesure">G</div>
-          <div class="mesure">GG</div>
-          <div class="mesure">U</div>
-          <div class="mesure">36</div>
-          <div class="mesure">38</div>
-          <div class="mesure">40</div>
-          <div class="mesure">36</div>
-          <div class="mesure">38</div>
-          <div class="mesure">40</div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="content">
+      <div class="product-area">
+        <div id="desktop-filters" class="filters">
+
+        </div>
+
+
+        <div>
+          <div class="wrapper">
+            <div class="products">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="more">
+        <button id="load-more" class="load-more">CARREGAR MAIS</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>M3: IMPLANTAÇÃO DE E-COMMERCE VTEX</footer>
 </body>
-
-
 <script src="bundle.js"></script>
 
 </html>

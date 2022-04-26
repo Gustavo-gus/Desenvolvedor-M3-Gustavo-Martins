@@ -7,16 +7,20 @@
   --lightBlue: #00C0EE;
 }
 
-.cart img{
+.logo button img{
   width: 25px;
   height: 25px;
+ 
   }
-  .nav-bar{ 
+  .logo{
     display: flex;
-    justify-content: space-around;
-    padding: 5px;
-    border-bottom:solid 2px var(--lightGray);
+    justify-content: space-between;
   }
+  .logo button{
+    background: none;
+    border: none;
+  }
+
  .colors{
    display: flex;
    flex-direction: column;
@@ -34,4 +38,5 @@
   padding: 2px;
   text-align: center;
 }
+
 
