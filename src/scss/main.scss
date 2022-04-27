@@ -20,6 +20,13 @@
     background: none;
     border: none;
   }
+  .logo button span{
+    background-color: var(--lightBlue);
+    border-radius: 50%;
+    position: absolute;
+    
+
+  }
 
  .colors{
    display: flex;
@@ -37,6 +44,32 @@
   height: 20px;
   padding: 2px;
   text-align: center;
+}
+footer{
+  background-color: var(--black);
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+footer p{
+  padding: 7px;
+}
+.load-more{
+  background-color: var(--lightBlue);
+  color: #fff;
+  padding: 5px;
+  width: 170px;
+  height: 35px;
+  text-align:center;
+}
+
+header {
+  border-bottom:solid 2px var(--lightGray);
+}
+.logo img{
+width: 170px;
+
 }
 
 
